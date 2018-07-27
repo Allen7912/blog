@@ -40,4 +40,22 @@ App\Flight::where('active', 1)
       ->where('destination', 'San Diego')
       ->update(['delayed' => 1]);
 
-      
+
+添加git 
+ssh-keygen
+vim ~/.ssh/id_rsa.pub  
+
+
+插入更新
+        $flight = new Flight;
+
+        $flight->name = $request->name;
+
+        $flight->save();
+
+查询一遍自动更新模型时间
+$flight = App\Flight::find(1);
+$flight->name = 'New Flight Name';
+$flight->save();
+
+
