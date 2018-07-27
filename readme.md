@@ -38,3 +38,5 @@ $flight->save();
 App\Flight::where('active', 1)
       ->where('destination', 'San Diego')
       ->update(['delayed' => 1]);
+
+      
