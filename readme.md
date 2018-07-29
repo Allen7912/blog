@@ -19,6 +19,8 @@ $flight = App\Flight::where('active', 1)->first();
 $flights = App\Flight::find([1, 2, 3]);
 
 
+
+
 $count = App\Flight::where('active', 1)->count();
 $max = App\Flight::where('active', 1)->max('price');
 
