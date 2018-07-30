@@ -62,3 +62,13 @@ $flight->name = 'New Flight Name';
 $flight->save();
 
 
+//=========后台登陆模板引入
+1.改server.php为index.php .hitacss 复制到根目录
+
+2修改database.php 中添加            'password' => env('DB_PASSWORD', ''),
+ 修改.env DB_PREFIX=blog_
+ 创建新方法pubf回车
+
+ 后台   1.登陆
+ 
+ 

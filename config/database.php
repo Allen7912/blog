@@ -50,6 +50,8 @@ return [
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
+            'password' => env('DB_PREFIX', ''),
+
             'strict' => true,
             'engine' => null,
         ],
