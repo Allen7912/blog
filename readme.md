@@ -70,5 +70,43 @@ $flight->save();
  创建新方法pubf回车
 
  后台   1.登陆
+
+ 创建AdminController控制器
  
- 
+ ===========================2018.7.30
+ golaravel.com/download  
+sourcetree
+开启php扩展 php_openssl.dll  php_mbstring.dll php_pdo_mysql.dll
+
+server.php 改成Index.php 直接不从public就能访问
+伪静态linux 复制到最外层
+
+怎么快怎么来
+
+ ===========================2018.7.31
+
+ LoginController
+
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+
+class LoginController extends CommonController
+{
+    public function login()
+    {
+    	return view('admin/login');
+    }
+}
+
+CommonController
+
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class CommonController extends Controller
+{
+    //
+}
