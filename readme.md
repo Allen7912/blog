@@ -110,3 +110,6 @@ class CommonController extends Controller
 {
     //
 }
+
+陈华地址,用哔哩哔哩18621744021 wang  引入验证码类
+http://php.wysls.com/forum-2-3.html
